@@ -1,0 +1,35 @@
+= GÜNEŞ PANELİNDEN ALINAN VERİLERİN ANLIK OLARAK WEB ORTAMINDA GÖSTERİLMESİ
+
+* Projenin en başta yapmak istediği güneş panelinden alınan verilerin web ortamına aktarılmasını sağlamak.
+* Rasperry Pi ile  güneş panellerinden Bluetooth teknolojisini kullanarak alınan akım , gerilim , sıcaklık , nem gibi verilerin Node.js teknolojisinden yararlanılarak web ortamına aktarılmıştır.
+* Kısaca Node.js teknolojisini anlatacak olursak.Ağ bağlantılı uygulamalar için geliştirilmiş çalışma ortamıdır.
+* Bu proje daha öncede yapılmış fakat veriler dışarıdan rasgele alınmıştır.
+* Hightchart kullanılmıştır.Kısaca web sitesine grafik eklemede kullanılmıştır.
+* Rasberry Pi'nin kullanılma amacı ise kartın çok küçük ve bir bilgisayara göre enerji kullanımının çok düşük olmasıdır.
+* Projenin arayüzünde Express.js kullanılmıştır.Express.js, tek sayfa, çoklu sayfa ve hibrit web uygulamaları geliştirmeye yönelik tasarlanmıştır.
+
+= Rasperry Pi
+* Üzerinde bir bilgisayarın sahip olması gereken bütün özellikleri barındıran kredi kartı boyutunda mini bir bilgisayar.
+* Projede bluetooth özelliğinden yararlanılmıştır.Üzerinde tümleşik bulunan Bluetooth donanımı sayesinden ek bir donanıma ihtiyaç duyulmaz.
+
+= Node.js
+* Google tarafından c++ diliyle geliştirilmiştir.
+* Sunucu taraflı bir platform (kodları yorumlayacak bir sunucuya ihtiyaç var,verileri okur,yorumlar ve html olarak kullanıcıya geri döndürür)
+* Tek çekirdek
+* Olay güdümlü programlama mantığı(bütün olaylarla değilde , bir olayla karşılaşıldığında o olayla ilgili kodu çalıştırır.)
+* Non-blocking(programda bir istek alındığında o istekle iş bitmeden diğer isteklere yönelmez onları bloklar.Asenkronda tam tersidir aynı anda 1 den fazla istekle uğraşılır non-blocking yapılmaz.)
+* Yüksek ölçeklenebilirlik(sistemin yaşanan değişimler karşısında performansından ödün vermemesidir.) 
+
+= NoSQL
+* İnternet kullanımının artmasıyla verilerin büyüklüğü arttı.Bu nedenle ilişkisel veritabanları yetersiz kalmaya başladı.İlişkisel veritabanlarındaki tablolarda yapılacak değişiklikler perfornmans açısından sorunlara yol açar.
+* NoSQL veritabanlarının bazıları verileri tablolar yerine JSON(javascript) ve XML formatında sakladılar.
+* JSON kullanan veritabanlarına örnek MongoDB ve CouchDB verilebilir.
+
+=MongoDB
+* Ölçeklenebilir,döküman tabanlı ve açık kaynak kodlu bir NoSQL veritabanıdır.
+* JSON formatında tutulur.(javascript object notation)
+
+= SONUÇ
+
+* Güneş panelinden sağlanacak enerji ile Rasperry Pi çalıştırılacağı için projeye uygun görülmüştür.
+
